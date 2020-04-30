@@ -14,7 +14,7 @@ function wrapAdjective(visual="*") {
     }
 }
 
-let Calculator ={ add: ()=>1+3,
+let Calculator ={ add: (a,b)=>a+b,
                     subtract: ()=>1-3,
                     multiply: ()=> 1*3,
                     divide: ()=> 10/5
@@ -22,6 +22,5 @@ let Calculator ={ add: ()=>1+3,
 
 function actionApplyer(int, array) {
      array.forEach(func => int = func(int))
-
      return int
 }
